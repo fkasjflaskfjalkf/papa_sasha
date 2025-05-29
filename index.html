@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приглашение на день рождения</title>
+    <title>Юбилей Александра</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="confetti"></div>
@@ -58,10 +58,12 @@
         const minutes = Math.floor((diff / (1000 * 60)) % 60);
         const seconds = Math.floor((diff / 1000) % 60);
         countdown.innerHTML = `
-            <span>${days} дн.</span> : 
-            <span>${hours} ч.</span> : 
-            <span>${minutes} мин.</span> : 
-            <span>${seconds} сек.</span>`;
+            <div class="countdown-days">${days} <span>дней</span></div>
+            <div class="countdown-hms">
+                <span>${hours} ч.</span> : 
+                <span>${minutes} мин.</span> : 
+                <span>${seconds} сек.</span>
+            </div>`;
     }
     setInterval(updateCountdown, 1000);
     updateCountdown();
