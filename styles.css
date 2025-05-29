@@ -92,11 +92,12 @@ p {
 .main-title {
     font-size: 2.8em;
     font-weight: 700;
-    color: #FFD700;
+    color: #3eb489;
     margin-bottom: 35px;
     letter-spacing: 2px;
-    text-shadow: 0 2px 16px rgba(255, 215, 0, 0.25), 0 2px 8px rgba(62,180,137,0.08);
+    text-shadow: 0 2px 8px rgba(62,180,137,0.08);
     text-align: center;
+    font-family: 'Pacifico', cursive;
 }
 
 @media (max-width: 600px) {
@@ -131,14 +132,25 @@ p {
     font-size: 1.3em;
     font-weight: 600;
 }
-.countdown {
-    font-size: 2em;
+.countdown-days {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #226c4b;
+    margin-bottom: 0.2em;
+}
+.countdown-days span {
+    font-size: 0.5em;
+    font-weight: 400;
+    margin-left: 8px;
+    color: #3eb489;
+}
+.countdown-hms {
+    font-size: 1.5em;
     font-weight: 600;
     color: #226c4b;
     letter-spacing: 2px;
-    margin-bottom: 5px;
 }
-.countdown span {
+.countdown-hms span {
     background: #fff;
     border-radius: 8px;
     padding: 4px 12px;
